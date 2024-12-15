@@ -1,0 +1,39 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "SneakerShop-Core\\Gateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "UserService\\UserService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AuthService\\AuthService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ProductService\\ProductService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "OrderService\\OrderService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "StockService\\StockService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ShippingService\\ShippingService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "InvoiceService\\InvoiceService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

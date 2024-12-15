@@ -1,0 +1,47 @@
+version: '3.4'
+
+services:
+  authservice:
+    image: quangghuyyyyy/authservice
+    build:
+      context: .
+      dockerfile: AuthService/Dockerfile
+      
+  userservice:
+    image: quangghuyyyyy/userservice
+    build:
+      context: .
+      dockerfile: UserService/Dockerfile
+  
+  orderservice:
+    image: quangghuyyyyy/orderservice:latest
+    build:
+      context: .
+      dockerfile: OrderService/Dockerfile
+  shippingservice:
+    image: quangghuyyyyy/shippingservice:latest
+    build:
+      context: .
+      dockerfile: ShippingService/Dockerfile
+  productservice:
+    image: quangghuyyyyy/productservice:latest
+    build:
+      context: .
+      dockerfile: ProductService/Dockerfile
+  invoiceservice:
+    image: quangghuyyyyy/invoiceservice:latest
+    build:
+      context: .
+      dockerfile: InvoiceService/Dockerfile
+  stockservice:
+    image: quangghuyyyyy/stockservice:latest
+    build:
+      context: .
+      dockerfile: StockService/Dockerfile
+  gateway:
+      image: quangghuyyyyy/gateway:latest
+      build:
+        context: .
+        dockerfile: SneakerShop-Core/Dockerfile
+      ports:
+        - "5000:80" 
